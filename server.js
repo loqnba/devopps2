@@ -1,7 +1,7 @@
 const express = require('express')
 
 const app = express();
-app.arguments(express.json());
+app.use(express.json());
 let tasks = [];
 
 app.get('/', (req, res) => {

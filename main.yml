@@ -1,0 +1,16 @@
+name: CI Pipeline
+
+on:
+  push:
+    branch:
+      -master
+    pull_request:
+      -master
+
+jobs:
+  build-and-test:
+    runs-on:ubuntu-latest
+
+    steps:
+      - name: ESLint (JS/TS) Action 
+      uses: iCrawl/action-eslint@v1
